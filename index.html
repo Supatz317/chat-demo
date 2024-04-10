@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Document</title>
 </head>
+
 <style>
     #block-right .message-text{
         word-wrap: break-word;
@@ -66,31 +67,28 @@
         /* flex-direction: row-reverse; */
     }
     
-    
+    body {
+        background-color: #212529;
+    }
     
     
 
 </style>
 
 <body>
-    <nav class="navbar bg-dark" data-bs-theme="dark">
-        <!-- Navbar content -->
-        <div class="container-fluid">
-            <h1 class="navbar-brand ">chat demo</h1>
-            <a class="navbar-brand" href="#">
-                <span class="material-symbols-outlined">home</span>
-            </a>
-        </div>
-    </nav>
+    
+   
+
 
     
     
-    <div class="container-sm">
-        <div class="window-chat">
-            <div class="d-block p-4 bg-body-secondary rounded-4 " style="width: 648px">
+    <div class="container ">
+        
+        <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="d-block p-4 m-4 bg-body-secondary rounded-4 " style="max-width: 648px; min-width: 200px; ">
                 
                 <!-- scroll pane -->
-                <div class="container mh-100 overflow-y-auto "  style="height: 540px">
+                <div class="container mh-100 overflow-y-auto "  style="height: 75vh; margin-bottom: 0.75em;">
                     <!-- left -->
                     <div id="block-left">
                         <div class="flex" id="info">
@@ -113,6 +111,35 @@
                         </div>
                     </div>
 
+                    <div id="block-right">
+                        <div class="flex" id="info">
+                            <div class="username" id="username">Banana</div>
+                            <div class="time" id="time">17.30</div>
+                        </div>
+                        <div class="flex" id="info">
+                            <div class="message-text " id="message-text">Sure, it's #12345678gb9.</div>
+                        </div>
+                    </div>
+
+                    <div id="block-left">
+                        <div class="flex" id="info">
+                            <div class="username" id="username">Banana</div>
+                            <div class="time" id="time">17.30</div>
+                        </div>
+                        <div class="flex" id="message">
+                            <div class="message-text" id="message-text">Sure, it's #12345678gbdcfavgjshbcjvblkjsbfvkfnvkcsldjnckn.rnfjk.snerf.kvnesrfljndfnvjkldnrftkvsdnftr9.</div>
+                        </div>
+                    </div>
+
+                    <div id="block-left">
+                        <div class="flex" id="info">
+                            <div class="username" id="username">Banana</div>
+                            <div class="time" id="time">17.30</div>
+                        </div>
+                        <div class="flex" id="message">
+                            <div class="message-text" id="message-text">Sure, it's #12345678gbdcfavgjshbcjvblkjsbfvkfnvkcsldjnckn.rnfjk.snerf.kvnesrfljndfnvjkldnrftkvsdnftr9.</div>
+                        </div>
+                    </div>
 
 
                     
@@ -121,18 +148,18 @@
 
 
                 <!-- button & field -->
-                <div class="input-group px-3 sticky-lg-bottom" id="message-box">
+                
+                <div class="input-group px-3 sticky-lg-bottom bg-body-secondary" id="message-box">
                     <input type="text" class="form-control" id="message" placeholder="type a message here." aria-label="message" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="submit">Send</button>
+                    <button class="btn btn-dark" type="button" id="submit">Send</button>
                 </div>
                 
-    
-
+                
             </div>
         </div>
-
+        
     </div>
-   
+    
 
     
 </body>
