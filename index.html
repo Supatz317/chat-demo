@@ -47,15 +47,6 @@
         display: inline-block; 
     }
 
-    .window-chat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100;
-        margin-top: 0.75rem; 
-        
-    }
     #block-left .flex {
         display: flex; /* d-flex */
         align-items: baseline; /* align-items-baseline */
@@ -76,18 +67,14 @@
 </style>
 
 <body>
-    
-   
-
-
-    
-    
+    <!-- edit class-->
     <div class="container ">
-        
+        <!-- edit class / add style-->
         <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <!-- edit class / add style-->
             <div class="d-block p-4 m-4 bg-body-secondary rounded-4 " style="max-width: 648px; min-width: 200px; ">
                 
-                <!-- scroll pane -->
+                <!-- scroll pane / add style -->
                 <div class="container mh-100 overflow-y-auto "  style="height: 75vh; margin-bottom: 0.75em;">
                     <!-- left -->
                     <div id="block-left">
@@ -111,35 +98,7 @@
                         </div>
                     </div>
 
-                    <div id="block-right">
-                        <div class="flex" id="info">
-                            <div class="username" id="username">Banana</div>
-                            <div class="time" id="time">17.30</div>
-                        </div>
-                        <div class="flex" id="info">
-                            <div class="message-text " id="message-text">Sure, it's #12345678gb9.</div>
-                        </div>
-                    </div>
-
-                    <div id="block-left">
-                        <div class="flex" id="info">
-                            <div class="username" id="username">Banana</div>
-                            <div class="time" id="time">17.30</div>
-                        </div>
-                        <div class="flex" id="message">
-                            <div class="message-text" id="message-text">Sure, it's #12345678gbdcfavgjshbcjvblkjsbfvkfnvkcsldjnckn.rnfjk.snerf.kvnesrfljndfnvjkldnrftkvsdnftr9.</div>
-                        </div>
-                    </div>
-
-                    <div id="block-left">
-                        <div class="flex" id="info">
-                            <div class="username" id="username">Banana</div>
-                            <div class="time" id="time">17.30</div>
-                        </div>
-                        <div class="flex" id="message">
-                            <div class="message-text" id="message-text">Sure, it's #12345678gbdcfavgjshbcjvblkjsbfvkfnvkcsldjnckn.rnfjk.snerf.kvnesrfljndfnvjkldnrftkvsdnftr9.</div>
-                        </div>
-                    </div>
+                    
 
 
                     
@@ -148,9 +107,9 @@
 
 
                 <!-- button & field -->
-                
-                <div class="input-group px-3 sticky-lg-bottom bg-body-secondary" id="message-box">
+                <div class="input-group px-3 sticky-lg-bottom" id="message-box">
                     <input type="text" class="form-control" id="message" placeholder="type a message here." aria-label="message" aria-describedby="button-addon2">
+                    <!-- color button | btn-dark-->
                     <button class="btn btn-dark" type="button" id="submit">Send</button>
                 </div>
                 
